@@ -36,21 +36,18 @@ button > a{
   border-bottom: .3125rem solid #4a7a7e;
 }
 
-.table{
+#tableBlock{
   background-color: #83d6de;
 }
 
-.formChooseTop{
-  border-left: 5px solid #e84566;
-  border-right: 5px solid #e84566;
+#tableColumn{
+  border: 5px solid #e84466;
 }
-.formChoose{
-  border-left: 5px solid #e84566;
-  border-right: 5px solid #e84566;
-}
-formChooseBottom{
-  border-left: 5px solid #e84566;
-  border-right: 5px solid #e84566;
+
+#tableItem{
+  text-align: center;
+  margin: 5px;
+  background: white;
 }
 
 #IwantBtn{
