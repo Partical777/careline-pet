@@ -58,6 +58,11 @@ button > a{
   width: 90px !important;
 }
 
+#categoryDivText{
+  margin: 0 auto;
+  width: 500px;;
+}
+
 
 #nicknameBackground{
   height: 150px;

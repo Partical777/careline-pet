@@ -187,26 +187,26 @@
     <img src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/toggle-kind-choose/choose-pet.png">
   </h2>
   <div class="row">
-    <div class="col-lg-2 col-md-1 col-sm-0"></div>
-    <div class="col-lg-4 col-md-5 col-sm-6">
+    <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
       <a (click)="changeCategory('dog')" id="chooseCategory">
         <img *ngIf="categoryChoose.category == '狗狗'" style="position: absolute" id="categoryImage" src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/toggle-kind-choose/cat-selected.png" class="d-block w-100 " alt="...">
         <img id="categoryImage" src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/toggle-kind-choose/dog.png" class="d-block w-100" alt="...">
       </a>
     </div>
-    <div class="col-lg-4 col-md-5 col-sm-6">
+    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-6">
       <a (click)="changeCategory('cat')" id="chooseCategory">
         <img *ngIf="categoryChoose.category == '貓貓'" style="position: absolute" id="categoryImage" src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/toggle-kind-choose/cat-selected.png" class="d-block w-100 " alt="...">
         <img id="categoryImage" src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/toggle-kind-choose/cat.png" class="d-block w-100" alt="...">
       </a>
     </div>
-    <div class="col-lg-2 col-md-1 col-sm-0"></div>
+    <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
   </div>
   <div class="text-center">
     <div style="color: red;">
-      <h3><span>{{categoryChoose.category}}</span>須滿8週~8歲6個月(未滿)</h3>
+      <h3><span>★{{categoryChoose.category}}</span>須滿8週~8歲6個月(未滿)</h3>
     </div>
-    <div>適用投保對象犬隻或貓隻，指因玩賞、伴侶之目的而飼養或管領，不包含非居家寵物性質之軍用、搜救、繁殖、競技或表演用途者</div>
+    <div id="categoryDivText">適用投保對象犬隻或貓隻，指因玩賞、伴侶之目的而飼養或管領，不包含非居家寵物性質之軍用、搜救、繁殖、競技或表演用途者</div>
   </div>
 
   <!-- 狗狗暱稱 -->
@@ -244,19 +244,19 @@
     </h2>
     <div class="row text-center">
       <div class="col-0 col-md-2"></div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle11}}</h6>
         <img [src]="categoryChoose.species11" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle12}}</h6>
         <img [src]="categoryChoose.species12" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle13}}</h6>
         <img [src]="categoryChoose.species13" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle14}}</h6>
         <img [src]="categoryChoose.species14" class="category d-block w-100" alt="...">
       </div>
@@ -264,23 +264,23 @@
     </div>
     <div class="row text-center">
       <div class="col-0 col-md-1"></div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle21}}</h6>
         <img [src]="categoryChoose.species21" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle22}}</h6>
         <img [src]="categoryChoose.species22" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle23}}</h6>
         <img [src]="categoryChoose.species23" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle24}}</h6>
         <img [src]="categoryChoose.species24" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-6 col-md-2">
+      <div class="col-6 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle25}}</h6>
         <img [src]="categoryChoose.species25" class="category d-block w-100" alt="...">
       </div>
@@ -288,19 +288,19 @@
     </div>
     <div class="row text-center">
       <div class="col-0 col-md-2"></div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle31}}</h6>
         <img [src]="categoryChoose.species31" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle32}}</h6>
         <img [src]="categoryChoose.species32" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle33}}</h6>
         <img [src]="categoryChoose.species33" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle34}}</h6>
         <img [src]="categoryChoose.species34" class="category d-block w-100" alt="...">
       </div>
@@ -308,15 +308,15 @@
     </div>
     <div class="row text-center">
       <div class="col-0 col-md-3"></div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle41}}</h6>
         <img [src]="categoryChoose.species41" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle42}}</h6>
         <img [src]="categoryChoose.species42" class="category d-block w-100" alt="...">
       </div>
-      <div class="col-3 col-md-2">
+      <div class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">更多</h6>
         <img src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/search.png" class="category d-block w-100" alt="...">
       </div>
