@@ -29,8 +29,11 @@ button > a{
 }
 
 .needToKnowBtn{
+  width: 100%;
   color: white;
   background: #7ac4cb;
+  border-radius: 2.5rem;
+  border-bottom: .3125rem solid #4a7a7e;
 }
 
 .table{
