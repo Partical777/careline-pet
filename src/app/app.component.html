@@ -214,7 +214,7 @@
     <img [src]="categoryChoose.nickname">
   </h2>
   <div id="nicknameBackground">
-    <input class="form-control nick-input ng-pristine ng-valid ng-touched" placeholder="輸入寵物暱稱(中英文皆可)">
+    <input [(ngModel)]="nicknameForm" class="form-control nick-input ng-pristine ng-valid ng-touched" placeholder="輸入寵物暱稱(中英文皆可)">
   </div>
 
   <!-- 狗狗性別 -->

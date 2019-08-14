@@ -85,6 +85,7 @@ export class AppComponent  {
 
   categoryChoose = this.localjson.Dog;
   categoryChooseForm = this.categoryChoose.categoryChoose;  //form
+  nicknameForm = "";
   genderChooseForm = 1; //form
 
   changeCategory(choose){
