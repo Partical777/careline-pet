@@ -38,16 +38,51 @@ button > a{
 
 #tableBlock{
   background-color: #83d6de;
+  padding: 25px;
+  border-radius: 25px;
 }
 
 #tableColumn{
   border: 5px solid #e84466;
+  padding: 0;
+}
+
+#tableColumn:nth-child(1){
+  border: 0px;
+}
+
+#tableColumn:nth-child(2){
+  border: 0px;
 }
 
 #tableItem{
   text-align: center;
-  margin: 5px;
+  margin: 5px 0;
   background: white;
+}
+
+#tableColumn > #tableItem:nth-child(1){
+  height: 75px;
+}
+
+#tableColumn > #tableItem:nth-child(2){
+  height: 300px;
+}
+
+#tableColumn > #tableItem:nth-child(3){
+  height: 150px;
+}
+
+#tableColumn > #tableItem:nth-child(4){
+  height: 200px;
+}
+
+#tableColumn > #tableItem:nth-child(5){
+  height: 200px;
+}
+
+#tableColumn > #tableItem:nth-child(6){
+  height: 50px;
 }
 
 #IwantBtn{
