@@ -12,9 +12,10 @@
           旅平險
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">基本保險</a>
+          <a class="dropdown-item" href="#">進階保險</a>
+          <a class="dropdown-item" href="#">全方位保險</a>
+          <a class="dropdown-item" href="#">國內旅平險</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -22,9 +23,8 @@
           寵物保險
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">安心保險</a>
+          <a class="dropdown-item" href="#">全方位保險</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -32,9 +32,9 @@
           租車保險
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">5萬車損</a>
+          <a class="dropdown-item" href="#">20萬車損</a>
+          <a class="dropdown-item" href="#">30萬車損</a>
         </div>
       </li>
       <li class="nav-item">
@@ -246,19 +246,19 @@
       <div class="col-0 col-md-2"></div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle11')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle11}}</h6>
-        <img [src]="categoryChoose.species11" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle11'}" [src]="categoryChoose.species11" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle12')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle12}}</h6>
-        <img [src]="categoryChoose.species12" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle12'}" [src]="categoryChoose.species12" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle13')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle13}}</h6>
-        <img [src]="categoryChoose.species13" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle13'}" [src]="categoryChoose.species13" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle14')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle14}}</h6>
-        <img [src]="categoryChoose.species14" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle14'}" [src]="categoryChoose.species14" class="category d-block w-100" alt="...">
       </div>
       <div class="col-0 col-md-2"></div>
     </div>
@@ -266,23 +266,23 @@
       <div class="col-0 col-md-1"></div>
       <div id="categoryChooseLink" class="col-6 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle21')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle21}}</h6>
-        <img [src]="categoryChoose.species21" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle21'}" [src]="categoryChoose.species21" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-6 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle22')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle22}}</h6>
-        <img [src]="categoryChoose.species22" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle22'}" [src]="categoryChoose.species22" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-6 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle23')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle23}}</h6>
-        <img [src]="categoryChoose.species23" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle23'}" [src]="categoryChoose.species23" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-6 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle24')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle24}}</h6>
-        <img [src]="categoryChoose.species24" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle24'}" [src]="categoryChoose.species24" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-6 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle25')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle25}}</h6>
-        <img [src]="categoryChoose.species25" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle25'}" [src]="categoryChoose.species25" class="category d-block w-100" alt="...">
       </div>
       <div class="col-0 col-md-1"></div>
     </div>
@@ -290,19 +290,19 @@
       <div class="col-0 col-md-2"></div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle31')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle31}}</h6>
-        <img [src]="categoryChoose.species31" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle31'}" [src]="categoryChoose.species31" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle32')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle32}}</h6>
-        <img [src]="categoryChoose.species32" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle32'}" [src]="categoryChoose.species32" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle33')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle33}}</h6>
-        <img [src]="categoryChoose.species33" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle33'}" [src]="categoryChoose.species33" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle34')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle34}}</h6>
-        <img [src]="categoryChoose.species34" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle34'}" [src]="categoryChoose.species34" class="category d-block w-100" alt="...">
       </div>
       <div class="col-0 col-md-2"></div>
     </div>
@@ -310,11 +310,11 @@
       <div class="col-0 col-md-3"></div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle41')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle41}}</h6>
-        <img [src]="categoryChoose.species41" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle41'}" [src]="categoryChoose.species41" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4" (click)="changeSpecie('speciesTitle42')">
         <h6 class="categoryTitle">{{categoryChoose.speciesTitle42}}</h6>
-        <img [src]="categoryChoose.species42" class="category d-block w-100" alt="...">
+        <img [ngClass]="{'specieSelected': specieChooseLogic == 'speciesTitle42'}" [src]="categoryChoose.species42" class="category d-block w-100" alt="...">
       </div>
       <div id="categoryChooseLink" class="col-3 col-md-2 col-sm-4">
         <h6 class="categoryTitle">更多</h6>

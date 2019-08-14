@@ -127,6 +127,10 @@ button > a{
   width: 500px;;
 }
 
+.specieSelected{
+  border: 5px solid #e84466;
+}
+
 
 #nicknameBackground{
   height: 150px;

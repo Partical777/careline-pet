@@ -87,6 +87,7 @@ export class AppComponent  {
   categoryChooseForm = this.categoryChoose.categoryChoose;  //form
   nicknameForm = "";  //form
   genderChooseForm = 1; //form
+  specieChooseLogic = ""
   specieChooseForm = ""; //form
   programChoose = 0; //form
 
@@ -104,6 +105,7 @@ export class AppComponent  {
   }
 
   changeSpecie(specie){
+    this.specieChooseLogic = specie;
     this.specieChooseForm = this.categoryChoose[specie];
   }
 
