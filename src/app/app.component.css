@@ -28,6 +28,11 @@ button > a{
   color: white;
 }
 
+.needToKnowBtn{
+  color: white;
+  background: #7ac4cb;
+}
+
 .table{
   background-color: #83d6de;
 }
@@ -104,8 +109,12 @@ button > a{
   justify-content:center;
 }
 
+.containGender > a {
+  cursor: pointer;
+}
+
 #gender1{
-  margin: 10px;
+  margin: 0 10px;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -117,7 +126,7 @@ button > a{
 }
 
 #gender2{
-  margin: 10px;
+  margin: 0 10px;
   height: 100px;
   width: 100px;
   border-radius: 50%;

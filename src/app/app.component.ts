@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   localjson = {
     "Dog" : {
+      "categoryChoose" : "Dog",
       "category" : "狗狗",
       "nickname" : "https://www.careline.com.tw/CareLinePet/Pet/assets/images/dog-nickname.gif",
       "gender" : "https://www.careline.com.tw/CareLinePet/Pet/assets/images/dog-gender.gif",
@@ -44,6 +45,7 @@ export class AppComponent  {
       "speciesTitle42" : "拉布拉多犬",
     },
     "Cat" : {
+      "categoryChoose" : "Cat",
       "category" : "貓貓",
       "nickname" : "https://www.careline.com.tw/CareLinePet/Pet/assets/images/cat-nickname.gif",
       "gender" : "https://www.careline.com.tw/CareLinePet/Pet/assets/images/cat-gender.gif",
@@ -82,6 +84,8 @@ export class AppComponent  {
   }
 
   categoryChoose = this.localjson.Dog;
+  categoryChooseForm = this.categoryChoose.categoryChoose;  //form
+  genderChooseForm = 1; //form
 
   changeCategory(choose){
     if(choose == "cat"){
@@ -90,5 +94,9 @@ export class AppComponent  {
       this.categoryChoose = this.localjson.Dog;
     }
     console.log(choose);
+  }
+
+  changeGender(gender){
+    this.genderChooseForm = gender;
   }
 }
