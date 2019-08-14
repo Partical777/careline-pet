@@ -85,8 +85,10 @@ export class AppComponent  {
 
   categoryChoose = this.localjson.Dog;
   categoryChooseForm = this.categoryChoose.categoryChoose;  //form
-  nicknameForm = "";
+  nicknameForm = "";  //form
   genderChooseForm = 1; //form
+  specieChooseForm = ""; //form
+  programChoose = 0; //form
 
   changeCategory(choose){
     if(choose == "cat"){
@@ -99,5 +101,13 @@ export class AppComponent  {
 
   changeGender(gender){
     this.genderChooseForm = gender;
+  }
+
+  changeSpecie(specie){
+    this.specieChooseForm = this.categoryChoose[specie];
+  }
+
+  changeProgram(program){
+    this.programChoose = program;
   }
 }

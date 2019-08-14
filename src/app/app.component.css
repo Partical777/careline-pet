@@ -38,21 +38,30 @@ button > a{
 
 #tableBlock{
   background-color: #83d6de;
-  padding: 25px;
+  padding: 0 25px;
   border-radius: 25px;
 }
 
 #tableColumn{
-  border: 5px solid #e84466;
   padding: 0;
 }
 
-#tableColumn:nth-child(1){
-  border: 0px;
+#tableColumn:nth-child(3){
+  cursor: pointer;
 }
 
-#tableColumn:nth-child(2){
-  border: 0px;
+#tableColumn:nth-child(4){
+  cursor: pointer;
+}
+
+.tableColumnSelected{
+  border: 5px solid #e84466;
+}
+
+#tableItemTop{
+  text-align: center;
+  padding: 5px 0;
+  height: 75px;
 }
 
 #tableItem{
@@ -61,8 +70,10 @@ button > a{
   background: white;
 }
 
-#tableColumn > #tableItem:nth-child(1){
-  height: 75px;
+#tableItemBottom{
+  height: 50px;
+  text-align: center;
+  padding: 5px 0;
 }
 
 #tableColumn > #tableItem:nth-child(2){
@@ -79,10 +90,6 @@ button > a{
 
 #tableColumn > #tableItem:nth-child(5){
   height: 200px;
-}
-
-#tableColumn > #tableItem:nth-child(6){
-  height: 50px;
 }
 
 #IwantBtn{
@@ -109,6 +116,10 @@ button > a{
 .category{
   border-radius: 50%!important; 
   width: 90px !important;
+}
+
+#categoryChooseLink{
+  cursor: pointer;
 }
 
 #categoryDivText{
