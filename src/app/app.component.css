@@ -36,6 +36,15 @@ button > a{
   margin: 0;
 }
 
+.categoryTitle{
+  position: absolute;
+  color: white;
+  background-color:#e84466;
+  height: 30px;
+  width: 125px;
+  border-radius: 50px !important; 
+  margin-top: -10px;
+}
 .category{
   border-radius: 50%!important; 
   width: 90px !important;
