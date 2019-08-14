@@ -40,6 +40,19 @@ button > a{
   background-color: #83d6de;
 }
 
+.formChooseTop{
+  border-left: 5px solid #e84566;
+  border-right: 5px solid #e84566;
+}
+.formChoose{
+  border-left: 5px solid #e84566;
+  border-right: 5px solid #e84566;
+}
+formChooseBottom{
+  border-left: 5px solid #e84566;
+  border-right: 5px solid #e84566;
+}
+
 #IwantBtn{
   width: 350px;
   border-radius: 25px;
