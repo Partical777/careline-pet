@@ -42,7 +42,24 @@ button > a{
 }
 
 
+#nicknameBackground{
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("https://www.careline.com.tw/CareLinePet/Pet/assets/images/nameBG.gif");
+  position: relative;
+}
 
+#nicknameBackground > input{
+  width: 25%;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  position: absolute;
+}
 
 #genderBackground{
   height: 150px;
