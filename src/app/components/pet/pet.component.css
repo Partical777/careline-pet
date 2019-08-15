@@ -2,14 +2,6 @@
   margin-top: 56px;
 }
 
-.nav-item{
-  margin: 0 10px;
-}
-
-#member-btn{
-  margin-left: auto;
-}
-
 .container > .title-image {
   text-align: center;
   margin: 50px;
@@ -100,9 +92,7 @@ button > a{
   margin: 25px auto;
 }
 
-.jumbotron{
-  margin: 0;
-}
+
 
 .categoryTitle{
   position: absolute;
