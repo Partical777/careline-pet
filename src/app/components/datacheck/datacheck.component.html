@@ -12,7 +12,7 @@
           <div class="card-header">
             主人資料
           </div>
-          <div class="card-body">
+          <div class="card-body cardBodyTop">
             <ul>
               <li>姓名</li>
               <li>身分證字號</li>
@@ -29,7 +29,7 @@
           <div class="card-header">
             寵物資料
           </div>
-          <div class="card-body">
+          <div class="card-body cardBodyTop">
             <ul>
               <li>暱稱</li>
               <li>種類</li>
@@ -46,16 +46,83 @@
 
     <h5>保單資料</h5>
     <img class="catImage" src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80">
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-header" style="color: white;background-color: #01a29a;">
+            2019
+          </div>
+          <div class="card-body">
+            09/18
+            <br>
+            生效
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8" style="height: 50px;border-bottom: 5px dashed grey"></div>
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-header" style="color: white;background-color: #e84466">
+            2019
+          </div>
+          <div class="card-body">
+            09/18
+            <br>
+            到期
+          </div>
+        </div>
+      </div>
+    </div>
     
     <img src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/%E5%85%A8%E6%96%B9%E4%BD%8D%E6%96%B9%E6%A1%88v2.png">
+
+    <h4 style="margin: 20px auto;">總保費 {{programMoney}}</h4>
+
+    <div style="margin-bottom: 35px;">
+      <h5>依法規定，保險公司需要了解您的保險需求，請協助勾選完成流程</h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <form class="col-md-8" style="text-align: left">
+          1. 投保目的及需求
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">保障</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">其他</label>
+          </div>
+        </form>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <form class="col-md-8" style="text-align: left">
+          2. 職業/行業
+          <br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">一般職業</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">其他</label>
+          </div>
+        </form>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-4">
-        <button style="width:100%;border-radius:25px; border: 1px solid grey;" type="button" class="btn btn-light">回方案選擇</button>
+        <button style="width:100%;border-radius:25px; border: 1px solid grey;" type="button" class="btn btn-light">上一步</button>
       </div>
       <div class="col-md-4">
-        <button style="width:100%;border-radius:25px;" type="button" class="btn btn-danger">下一步</button>
+        <button style="width:100%;border-radius:25px;" type="button" class="btn btn-danger">訂單確認，付款去</button>
       </div>
       <div class="col-md-2"></div>
     </div>

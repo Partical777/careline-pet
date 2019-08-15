@@ -12,6 +12,14 @@ ul{
   text-align: left;
 }
 
+li{
+  margin: 5px;
+}
+
+.cardBodyTop{
+  height: 250px;
+}
+
 .catImage{
   width:200px;
   height: 200px;
