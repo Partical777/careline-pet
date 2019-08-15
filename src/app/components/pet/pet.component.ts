@@ -112,4 +112,12 @@ export class PetComponent  {
   changeProgram(program){
     this.programChoose = program;
   }
+
+  SaveToStroage(){
+    localStorage.setItem("categoryChooseForm", this.categoryChooseForm == "dog" ? "狗狗" : "貓貓");
+    localStorage.setItem("nicknameForm", this.nicknameForm);
+    localStorage.setItem("genderChooseForm", this.genderChooseForm == 1 ? "Boy" : "Girl");
+    localStorage.setItem("specieChooseForm", this.specieChooseForm);
+    localStorage.setItem("programChoose", this.programChoose == 0 ? "安心方案" : "全方位方案");
+  }
 }

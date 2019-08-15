@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class MemberComponent  {
-  ngOnInit(){}
+  categoryChooseForm = localStorage.getItem("categoryChooseForm");
+  nicknameForm = localStorage.getItem("nicknameForm");
+  genderChooseForm = localStorage.getItem("genderChooseForm");
+  specieChooseForm = localStorage.getItem("specieChooseForm");
+  programChoose = localStorage.getItem("programChoose");
 }

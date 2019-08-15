@@ -450,6 +450,12 @@
         <div>寵物品種：{{specieChooseForm}}</div>
         <div>保險方案：{{programChoose == 0 ? "安心方案" : "全方位方案"}}</div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="SaveToStroage()">
+          <a href="/member">Next</a>
+        </button>
+      </div>
     </div>
   </div>
 </div>
