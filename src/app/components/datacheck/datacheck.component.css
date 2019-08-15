@@ -1,0 +1,19 @@
+.jumbotron{
+  margin-top: 60px;
+  height: 300px;
+  background-image: url(https://www.careline.com.tw/CareLinePet/Pet//CareLinePet/Pet/assets/progressBar/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+.catImage{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+}
