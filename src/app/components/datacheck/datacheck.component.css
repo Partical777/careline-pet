@@ -6,6 +6,20 @@ hr{
   border:  rgb(232, 69, 102) 1px solid;
 }
 
+.littleIcon{
+  font-size: 3em;
+  width: 1.5em;
+  height: 1.5em;
+  position:absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: white;
+  border-radius: 50%;
+  box-shadow: rgb(239, 239, 239) -3px 1px 4px 0px, rgb(193, 193, 193) 2px 4px 3px 0px;
+}
+
 .jumbotron{
   margin-top: 60px;
   height: 300px;
