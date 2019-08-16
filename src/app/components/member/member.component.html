@@ -14,8 +14,8 @@
 </div>
 
 <div class="container">
-  <h2>快速資料填寫</h2>
-  <h3>要保人(飼主)</h3>
+  <h2 class="redWord">快速資料填寫</h2>
+  <h3 class="redWord">要保人(飼主)</h3>
   <hr>
   <div class="row">
     <div class="col-sm-12 col-md-6">
@@ -105,7 +105,7 @@
     </div>
   </div>
 
-  <h3>寵物</h3>
+  <h3 class="redWord">寵物</h3>
   <hr>
   <div class="row">
     <div class="col-sm-12 col-md-6">
@@ -161,6 +161,7 @@
               <option [value]="3">3</option>
             </select>
           </div>
+          <div style="margin-bottom:15px;" class="redWord">{{categoryChooseForm}}須滿8週~8歲6個月(未滿)</div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-2">體重</div>
@@ -174,6 +175,7 @@
           <div class="form-group col-md-9">
             <input type="email" class="form-control" id="inputEmail4" placeholder="限JPG GIF PNG">
           </div>
+          <div style="margin-bottom:15px;" class="redWord">寵物照片需露出臉部正面及四肢、清晰可辨視</div>
         </div>
 
         <div class="form-row">
@@ -211,7 +213,7 @@
             </select>
           </div>
           <div class="form-group">
-            本保險為一年期，起保日凌晨0點生效
+            <div class="redWord">本保險為一年期，起保日凌晨0點生效</div>
             <br>
             如寵物在保單生效日起發生一般疾病有30天的等待期，癌症則有90天的等待期，一般意外傷害則不受等待期限制
           </div>
@@ -224,7 +226,7 @@
             </div>
           </div>
           <div class="form-group">
-            <a href="#">點此看續保費率</a>
+            <a class="redWord" href="#">點此看續保費率</a>
             要保人同意自動續約，須回傳自動續約授權書(於訂單成立通知信附件下載)，依條款之約定於保險期間屆滿時，不需再次提供要保資料、證明文件，即可逐年自動辦理續約，並收取續約保險費，保障不中斷，保險公司擁有續保核准權利
           </div>
         </div>
@@ -248,9 +250,9 @@
   </div>
 
   <div class="text-center" style="margin: 50px;">
-    <h2>主動告知事項</h2>
+    <h2 class="redWord">主動告知事項</h2>
     <hr>
-    <h6 class="text-left">【敬請對下列告知事項應據實告知並親自填寫，如有為隱匿或遺漏不為說明，或為不實的說明，足以影響本公司對危險的估計，依保險法第六十四條規定保險公司得解除契約。】</h6>
+    <h6 class="text-left redWord">【敬請對下列告知事項應據實告知並親自填寫，如有為隱匿或遺漏不為說明，或為不實的說明，足以影響本公司對危險的估計，依保險法第六十四條規定保險公司得解除契約。】</h6>
     <div class="form-row">
       
       <div class="text-left form-group col-md-2"></div>

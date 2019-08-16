@@ -1,3 +1,11 @@
+hr{
+  border:  rgb(232, 69, 102) 1px solid;
+}
+
+.redWord {
+  color: rgb(232, 69, 102);
+}
+
 .jumbotron{
   margin-top: 60px;
   height: 300px;
@@ -37,10 +45,12 @@
 
 .form-group > input{
   border-radius: 25px !important;
+  height: 50px;
 }
 
 .form-group > select{
   border-radius: 25px !important;
+  height: 50px;
 }
 
 #finalCheckBox{
