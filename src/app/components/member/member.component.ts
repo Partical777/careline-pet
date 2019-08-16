@@ -21,8 +21,11 @@ export class MemberComponent  {
   LastName = "";//Added
   FirstName = "";//Added
   TaiwanID = "";//Added
-  Birthday = "";
-  Email = "";//Added
+  BirthYear = "123456";
+  BirthMonth = "";
+  BirthDay = "";
+  Email = "examle@example.com";//Added
   Phone = "";//Added
   Address = "";
+
 }

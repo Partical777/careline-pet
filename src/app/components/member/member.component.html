@@ -13,7 +13,7 @@
       <form>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input disabled type="email" class="form-control" id="inputEmail4" value="examle@example.com">
+            <input disabled type="email" class="form-control" id="inputEmail4" [value]="Email">
           </div>
         </div>
         <div class="form-row">
@@ -32,21 +32,23 @@
           生日
           </div>
           <div class="form-group col-md-5">
-            <select id="inputState" class="form-control">
+            <select [(ngModel)]="BirthYear" id="inputState" class="form-control">
               <option selected>西元年</option>
-              <option>...</option>
+              <option [ngValue]="2000">2000</option>
+              <option [ngValue]="2001">2001</option>
+              <option [ngValue]="2002">2002</option>
             </select>
           </div>
           <div class="form-group col-md-3">
             <select id="inputState" class="form-control">
               <option selected>月</option>
-              <option>...</option>
+              <option>1</option>
             </select>
           </div>
           <div class="form-group col-md-3">
             <select id="inputState" class="form-control">
               <option selected>日</option>
-              <option>...</option>
+              <option>1</option>
             </select>
           </div>
         </div>
