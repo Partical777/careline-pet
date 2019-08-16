@@ -13,17 +13,18 @@ export class DatacheckComponent  {
   specieChooseForm = localStorage.getItem("specieChooseForm");
   programChoose = localStorage.getItem("programChoose");
   programMoney = this.programChoose == "安心方案" ? "NT$2,312" : "NT$3,893";
-  PetBirthday = "";
-  PetWeight = "";
-  PetSeries = "";
+  
+  Name = localStorage.getItem("Name");
+  TaiwanID = localStorage.getItem("TaiwanID");
+  Birth = localStorage.getItem("Birth");
+  Email = localStorage.getItem("Email");
+  Phone = localStorage.getItem("Phone");
+  Address = localStorage.getItem("Address");
 
-
-  LastName = "";
-  FirstName = "";
-  TaiwanID = "";
-  Birthday = "";
-  Email = "";
-  Phone = "";
-  Address = "";
+  PetBirth = localStorage.getItem("PetBirth");
+  PetWeight = localStorage.getItem("PetWeight");
+  StartYear = parseInt(localStorage.getItem("StartYear"));
+  StartMonth = localStorage.getItem("StartMonth");
+  StartDay = localStorage.getItem("StartDay");
 
 }

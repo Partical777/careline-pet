@@ -80,7 +80,6 @@ export class MemberComponent  {
     localStorage.setItem("Birth", this.BirthYear + "/" + this.BirthMonth + "/" + this.BirthDay);
     localStorage.setItem("Email", this.Email);
     localStorage.setItem("Phone", this.Phone);
-    localStorage.setItem("Name", this.LastName + this.FirstName);
     localStorage.setItem("Address", this.Address1 + ", " + this.Address2 + ", " + this.Address3 + ", " + this.Address4);
 
     localStorage.setItem("PetBirth", this.PetBirthYear + "/" + this.PetBirthMonth + "/" + this.PetBirthDay);

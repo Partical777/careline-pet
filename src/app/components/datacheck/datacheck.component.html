@@ -14,12 +14,12 @@
           </div>
           <div class="card-body cardBodyTop">
             <ul>
-              <li>姓名</li>
-              <li>身分證字號</li>
-              <li>生日</li>
-              <li>Email</li>
-              <li>行動電話</li>
-              <li>地址</li>
+              <li>姓名 : {{Name}}</li>
+              <li>身分證字號 : {{TaiwanID}}</li>
+              <li>生日 : {{Birth}}</li>
+              <li>Email : {{Email}}</li>
+              <li>行動電話 : {{Phone}}</li>
+              <li>地址 : {{Address}}</li>
             </ul>
           </div>
         </div>
@@ -31,12 +31,12 @@
           </div>
           <div class="card-body cardBodyTop">
             <ul>
-              <li>暱稱</li>
-              <li>種類</li>
-              <li>品種</li>
-              <li>性別</li>
-              <li>生日</li>
-              <li>體重</li>
+              <li>暱稱 : {{nicknameForm}}</li>
+              <li>種類 : {{categoryChooseForm}}</li>
+              <li>品種 : {{specieChooseForm}}</li>
+              <li>性別 : {{genderChooseForm}}</li>
+              <li>生日 : {{PetBirth}}</li>
+              <li>體重 : {{PetWeight}} kg</li>
               <li>晶片序號</li>
             </ul>
           </div>
@@ -51,10 +51,10 @@
       <div class="col-md-2">
         <div class="card">
           <div class="card-header" style="color: white;background-color: #01a29a;">
-            2019
+            {{StartYear}}
           </div>
           <div class="card-body">
-            09/18
+            {{StartMonth}}/{{StartDay}}
             <br>
             生效
           </div>
@@ -64,10 +64,10 @@
       <div class="col-md-2">
         <div class="card">
           <div class="card-header" style="color: white;background-color: #e84466">
-            2019
+            {{StartYear+1}}
           </div>
           <div class="card-body">
-            09/18
+            {{StartMonth}}/{{StartDay}}
             <br>
             到期
           </div>

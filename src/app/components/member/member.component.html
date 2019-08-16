@@ -18,14 +18,14 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="inputAddress" placeholder="姓" [value]="LastName">
+            <input type="text" class="form-control" id="inputAddress" placeholder="姓" name="LastName" [(ngModel)]="LastName">
           </div>
           <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="inputAddress" placeholder="名" [value]="FirstName">
+            <input type="text" class="form-control" id="inputAddress" placeholder="名" name="FirstNmae" [(ngModel)]="FirstName">
           </div>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="inputAddress2" placeholder="身分證字號" [value]="TaiwanID">
+          <input type="text" class="form-control" id="inputAddress2" placeholder="身分證字號" name="TaiwanID" [(ngModel)]="TaiwanID">
         </div>
         <div class="form-row">
           <div class="form-group col-md-1">
@@ -70,23 +70,23 @@
       <form>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="行動電話" [value]="Phone">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="行動電話" name="Phone" [(ngModel)]="Phone">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress" placeholder="縣市" [value]="Address1">
+            <input type="text" class="form-control" id="inputAddress" placeholder="縣市" name="Address1" [(ngModel)]="Address1">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="區" [value]="Address2">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="區" name="Address2" [(ngModel)]="Address2">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" [value]="Address3">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" name="Address3" [(ngModel)]="Address3">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="text" class="form-control" id="inputCity" placeholder="地址" [value]="Address4">
+            <input type="text" class="form-control" id="inputCity" placeholder="地址" name="Address4" [(ngModel)]="Address4">
           </div>
         </div>
       </form>
@@ -129,7 +129,7 @@
             <select (change)="getPetYear($event)" id="inputState" class="form-control">
               <option selected>西元年</option>
               <option [value]="2016">2016</option>
-              <option [value]="2017">2107</option>
+              <option [value]="2017">2017</option>
               <option [value]="2018">2018</option>
             </select>
           </div>
@@ -153,7 +153,7 @@
         <div class="form-row">
           <div class="form-group col-md-2">體重</div>
           <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="請輸入體重" [value]="PetWeight">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="請輸入體重" name="PetWeight" [(ngModel)]="PetWeight">
           </div>
           <div class="form-group col-md-4">公斤</div>
         </div>
