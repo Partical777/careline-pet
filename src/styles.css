@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body{
+  font-family: 'Noto Sans TC', sans-serif !important;
+}
