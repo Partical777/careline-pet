@@ -1,3 +1,7 @@
+.container{
+  color: grey;
+}
+
 hr{
   border:  rgb(232, 69, 102) 1px solid;
 }
@@ -57,4 +61,15 @@ hr{
   padding: 20px 50px;
   border: 2px solid grey;
   border-radius: 100px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+  background-color: rgb(232, 69, 102);
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: rgb(232, 69, 102);
+    border-radius: 50%;
 }

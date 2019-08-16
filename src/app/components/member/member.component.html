@@ -218,11 +218,9 @@
             如寵物在保單生效日起發生一般疾病有30天的等待期，癌症則有90天的等待期，一般意外傷害則不受等待期限制
           </div>
           <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                同意自動續保(若未勾選視為不同意)
-              </label>
+            <div class="custom-control custom-checkbox form-check">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">同意自動續保(若未勾選視為不同意)</label>
             </div>
           </div>
           <div class="form-group">
@@ -233,7 +231,7 @@
         <div class="form-row">
           <div class="form-group col-md-8"></div>
           <div class="form-group col-md-4">
-            <h5>保費：{{ programMoney }}</h5>
+            <h5>保費：<span class="redWord">{{ programMoney }}</span></h5>
           </div>
         </div>
       </form>
@@ -258,13 +256,13 @@
       <div class="text-left form-group col-md-2"></div>
       <div class="text-left form-group col-md-8">
         <form>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">否</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">否</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">是</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">是</label>
           </div>
           1. 是否有投保其他寵物保險？
         </form>
@@ -276,13 +274,13 @@
       <div class="text-left form-group col-md-2"></div>
       <div class="text-left form-group col-md-8">
         <form>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">否</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline21">否</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">是</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline22" name="customRadioInline21" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline22">是</label>
           </div>
           2. 過去一年內被保險寵物是否服用或施打疫苗（含狂犬病疫苗)？
         </form>
@@ -293,13 +291,13 @@
       <div class="text-left form-group col-md-2"></div>
       <div class="text-left form-group col-md-8">
         <form>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">否</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline31" name="customRadioInline31" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline31">否</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">是</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline32" name="customRadioInline31" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline32">是</label>
           </div>
           3. 被保險寵物最近二個月內是否曾因受傷或生病接受醫師治療、診療或用藥？
         </form>
@@ -310,13 +308,13 @@
       <div class="text-left form-group col-md-2"></div>
       <div class="text-left form-group col-md-8">
         <form>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">否</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline41" name="customRadioInline41" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline41">否</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">是</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline42" name="customRadioInline41" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline42">是</label>
           </div>
           4. 目前被保險寵物身體是否有以下障礙(失明/四肢缺陷/出血、腹瀉/耳聾)？
         </form>
@@ -327,13 +325,13 @@
       <div class="text-left form-group col-md-2"></div>
       <div class="text-left form-group col-md-8">
         <form>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">否</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline51" name="customRadioInline51" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline51">否</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">是</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline52" name="customRadioInline51" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline52">是</label>
           </div>
           5. 被保險寵物投保時如有提供體檢證明，體檢內容是否有異常項目？
         </form>
