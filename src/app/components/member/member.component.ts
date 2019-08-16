@@ -71,7 +71,7 @@ export class MemberComponent  {
     this.StartDay = event.target.value;
   }
 
-
+  
 
 
   SaveToStroage(){
