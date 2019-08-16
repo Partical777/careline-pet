@@ -44,7 +44,7 @@
               <option selected>月</option>
               <option [value]="1">1</option>
               <option [value]="2">2</option>
-              <option [value]="3">1</option>
+              <option [value]="3">3</option>
             </select>
           </div>
           <div class="form-group col-md-3">
@@ -52,7 +52,7 @@
               <option selected>日</option>
               <option [value]="1">1</option>
               <option [value]="2">2</option>
-              <option [value]="3">1</option>
+              <option [value]="3">3</option>
             </select>
           </div>
         </div>
@@ -75,18 +75,18 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress" placeholder="縣市">
+            <input type="text" class="form-control" id="inputAddress" placeholder="縣市" [value]="Address1">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="區">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="區" [value]="Address2">
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" [value]="Address3">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="text" class="form-control" id="inputCity" placeholder="地址">
+            <input type="text" class="form-control" id="inputCity" placeholder="地址" [value]="Address4">
           </div>
         </div>
       </form>
@@ -126,8 +126,8 @@
           生日
           </div>
           <div class="form-group col-md-5">
-            <select id="inputState" class="form-control">
-              <option (change)="getPetYear($event)" selected>西元年</option>
+            <select (change)="getPetYear($event)" id="inputState" class="form-control">
+              <option selected>西元年</option>
               <option [value]="2016">2016</option>
               <option [value]="2017">2107</option>
               <option [value]="2018">2018</option>
@@ -138,7 +138,7 @@
               <option selected>月</option>
               <option [value]="1">1</option>
               <option [value]="2">2</option>
-              <option [value]="3">1</option>
+              <option [value]="3">3</option>
             </select>
           </div>
           <div class="form-group col-md-3">
@@ -146,7 +146,7 @@
               <option selected>日</option>
               <option [value]="1">1</option>
               <option [value]="2">2</option>
-              <option [value]="3">1</option>
+              <option [value]="3">3</option>
             </select>
           </div>
         </div>
@@ -178,21 +178,24 @@
           寵物保險起保日
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
-              <option selected>2019</option>
-              <option>...</option>
+            <select (change)="getStartYear($event)" id="inputState" class="form-control">
+              <option selected>年</option>
+              <option [value]="2019">2019</option>
+              <option [value]="2020">2020</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getStartMonth($event)" id="inputState" class="form-control">
               <option selected>月</option>
-              <option>...</option>
+              <option [value]="8">8</option>
+              <option [value]="9">9</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getStartDay($event)" id="inputState" class="form-control">
               <option selected>日</option>
-              <option>...</option>
+              <option [value]="15">15</option>
+              <option [value]="30">30</option>
             </select>
           </div>
           <div class="form-group">
@@ -330,7 +333,7 @@
         <a href="/"><button style="width:100%;border-radius:25px; border: 1px solid grey;" type="button" class="btn btn-light">回方案選擇</button></a>
       </div>
       <div class="col-md-4">
-        <a href="/datacheck"><button style="width:100%;border-radius:25px;" type="button" class="btn btn-danger">下一步</button></a>
+        <a href="/datacheck"><button (click)="SaveToStroage()" style="width:100%;border-radius:25px;" type="button" class="btn btn-danger">下一步</button></a>
       </div>
       <div class="col-md-2"></div>
     </div>
