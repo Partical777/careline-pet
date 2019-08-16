@@ -1,3 +1,11 @@
+.redWord {
+  color: rgb(232, 69, 102);
+}
+
+hr{
+  border:  rgb(232, 69, 102) 1px solid;
+}
+
 .jumbotron{
   margin-top: 60px;
   height: 300px;
@@ -48,4 +56,10 @@ li{
   width:200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: rgb(232, 69, 102);
+    border-radius: 50%;
 }

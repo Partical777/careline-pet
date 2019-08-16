@@ -16,12 +16,12 @@
 <div class="container">
 
   <div class="text-center" style="margin: 50px;">
-    <h2>資料確認</h2>
+    <h2 class="redWord" style="margin-bottom:50px">資料確認</h2>
 
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header redWord">
             主人資料
           </div>
           <div class="card-body cardBodyTop">
@@ -38,7 +38,7 @@
       </div>
       <div class="col-md-6">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header redWord">
             寵物資料
           </div>
           <div class="card-body cardBodyTop">
@@ -56,10 +56,10 @@
       </div>
     </div>
 
-    <h5>保單資料</h5>
+    <h5 class="redWord" style="margin:50px">保單資料</h5>
     <img class="catImage" src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80">
 
-    <div class="row">
+    <div class="row" style="margin: 50px;">
       <div class="col-md-2">
         <div class="card">
           <div class="card-header" style="color: white;background-color: #01a29a;">
@@ -87,25 +87,25 @@
       </div>
     </div>
     
-    <img src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/%E5%85%A8%E6%96%B9%E4%BD%8D%E6%96%B9%E6%A1%88v2.png">
+    <img style="width: 100%" src="https://www.careline.com.tw/CareLinePet/Pet/assets/images/%E5%85%A8%E6%96%B9%E4%BD%8D%E6%96%B9%E6%A1%88v2.png">
 
-    <h4 style="margin: 20px auto;">總保費 {{programMoney}}</h4>
+    <h4 style="margin: 20px auto;">總保費 <span class="redWord">{{programMoney}}</span></h4>
 
     <div style="margin-bottom: 35px;">
-      <h5>依法規定，保險公司需要了解您的保險需求，請協助勾選完成流程</h5>
+      <h5 class="redWord">依法規定，保險公司需要了解您的保險需求，請協助勾選完成流程</h5>
       <hr>
       <div class="row">
         <div class="col-md-2"></div>
         <form class="col-md-8" style="text-align: left">
           1. 投保目的及需求
           <br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">保障</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">保障</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">其他</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">其他</label>
           </div>
         </form>
         <div class="col-md-2"></div>
@@ -115,13 +115,13 @@
         <form class="col-md-8" style="text-align: left">
           2. 職業/行業
           <br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">一般職業</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline21">一般職業</label>
           </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">其他</label>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline22" name="customRadioInline21" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline22">其他</label>
           </div>
         </form>
         <div class="col-md-2"></div>
