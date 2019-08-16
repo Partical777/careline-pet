@@ -32,23 +32,27 @@
           生日
           </div>
           <div class="form-group col-md-5">
-            <select [(ngModel)]="BirthYear" id="inputState" class="form-control">
+            <select (change)="getYear($event)" id="inputState" class="form-control">
               <option selected>西元年</option>
-              <option [ngValue]="2000">2000</option>
-              <option [ngValue]="2001">2001</option>
-              <option [ngValue]="2002">2002</option>
+              <option [value]="2000">2000</option>
+              <option [value]="2001">2001</option>
+              <option [value]="2002">2002</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getMonth($event)" id="inputState" class="form-control">
               <option selected>月</option>
-              <option>1</option>
+              <option [value]="1">1</option>
+              <option [value]="2">2</option>
+              <option [value]="3">1</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getDay($event)" id="inputState" class="form-control">
               <option selected>日</option>
-              <option>1</option>
+              <option [value]="1">1</option>
+              <option [value]="2">2</option>
+              <option [value]="3">1</option>
             </select>
           </div>
         </div>
@@ -123,20 +127,26 @@
           </div>
           <div class="form-group col-md-5">
             <select id="inputState" class="form-control">
-              <option selected>西元年</option>
-              <option>...</option>
+              <option (change)="getPetYear($event)" selected>西元年</option>
+              <option [value]="2016">2016</option>
+              <option [value]="2017">2107</option>
+              <option [value]="2018">2018</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getPetMonth($event)" id="inputState" class="form-control">
               <option selected>月</option>
-              <option>...</option>
+              <option [value]="1">1</option>
+              <option [value]="2">2</option>
+              <option [value]="3">1</option>
             </select>
           </div>
           <div class="form-group col-md-3">
-            <select id="inputState" class="form-control">
+            <select (change)="getPetDay($event)" id="inputState" class="form-control">
               <option selected>日</option>
-              <option>...</option>
+              <option [value]="1">1</option>
+              <option [value]="2">2</option>
+              <option [value]="3">1</option>
             </select>
           </div>
         </div>
