@@ -145,25 +145,19 @@
           <div class="form-group col-md-5">
             <select (change)="getPetYear($event)" id="inputState" class="form-control">
               <option selected>西元年</option>
-              <option [value]="2016">2016</option>
-              <option [value]="2017">2017</option>
-              <option [value]="2018">2018</option>
+              <option *ngFor="let yaer of PetYear" [value]="yaer">{{yaer}}</option>
             </select>
           </div>
           <div class="form-group col-md-3">
             <select (change)="getPetMonth($event)" id="inputState" class="form-control">
               <option selected>月</option>
-              <option [value]="1">1</option>
-              <option [value]="2">2</option>
-              <option [value]="3">3</option>
+              <option *ngFor="let month of PetMonth" [value]="month">{{month}}</option>
             </select>
           </div>
           <div class="form-group col-md-3">
             <select (change)="getPetDay($event)" id="inputState" class="form-control">
               <option selected>日</option>
-              <option [value]="1">1</option>
-              <option [value]="2">2</option>
-              <option [value]="3">3</option>
+              <option *ngFor="let day of PetDay" [value]="day">{{day}}</option>
             </select>
           </div>
           <div style="margin-bottom:15px;" class="redWord">{{categoryChooseForm}}須滿8週~8歲6個月(未滿)</div>
@@ -188,7 +182,10 @@
           <div class="form-group col-md-9">
             <select id="inputState" class="form-control">
               <option selected>請選取證明文件</option>
-              <option>...</option>
+              <option>晶片序號</option>
+              <option>血統證明</option>
+              <option>體檢證明(需兩年內)</option>
+              <option>注射疫苗證明(需兩年內)</option>
             </select>
           </div>
         </div>
@@ -200,7 +197,6 @@
             <select (change)="getStartYear($event)" id="inputState" class="form-control">
               <option selected>年</option>
               <option [value]="2019">2019</option>
-              <option [value]="2020">2020</option>
             </select>
           </div>
           <div class="form-group col-md-3">
@@ -208,13 +204,13 @@
               <option selected>月</option>
               <option [value]="8">8</option>
               <option [value]="9">9</option>
+              <option [value]="10">10</option>
             </select>
           </div>
           <div class="form-group col-md-3">
             <select (change)="getStartDay($event)" id="inputState" class="form-control">
               <option selected>日</option>
-              <option [value]="15">15</option>
-              <option [value]="30">30</option>
+              <option *ngFor="let day of PetDay" [value]="day">{{day}}</option>
             </select>
           </div>
           <div class="form-group">

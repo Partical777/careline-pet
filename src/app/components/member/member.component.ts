@@ -16,6 +16,25 @@ export class MemberComponent  {
     Address4Control: new FormControl('', Validators.required),
   });
 
+  PetYear = [];
+  PetMonth = [];
+  PetDay = [];
+
+  ngOnInit(){
+    for(let i = 1999; i <= 2019 ; i++){
+      this.PetYear.push(i);
+    }
+    for(let i = 1; i <= 12 ; i++){
+      this.PetMonth.push(i);
+    }
+    for(let i = 1; i <= 31 ; i++){
+      this.PetDay.push(i);
+    }
+  }
+
+
+
+
   categoryChooseForm = localStorage.getItem("categoryChooseForm");
   nicknameForm = localStorage.getItem("nicknameForm");
   genderChooseForm = localStorage.getItem("genderChooseForm");
@@ -38,6 +57,8 @@ export class MemberComponent  {
   BirthMonth = "1";//Added
   BirthDay = "1";//Added
   Email = "examle@example.com";//Added
+
+  
 
   getYear(event){
     this.BirthYear = event.target.value;
