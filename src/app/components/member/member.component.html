@@ -79,26 +79,31 @@
       請填入正確地址，以利保單與活動贈品寄送
     </div>
     <div class="col-sm-12 col-md-6">
-      <form>
+      <form [formGroup]="form2part">
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="行動電話" name="Phone" [(ngModel)]="Phone">
+            <input formControlName="phoneControl" type="text" class="form-control" id="inputEmail4" placeholder="行動電話" name="Phone">
+            <div class="alert alert-danger" *ngIf="form2part.get('phoneControl').touched && form2part.get('phoneControl').invalid">Required</div>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress" placeholder="縣市" name="Address1" [(ngModel)]="Address1">
+            <input formControlName="Address1Control" type="text" class="form-control" id="inputAddress" placeholder="縣市" name="Address1" >
+            <div class="alert alert-danger" *ngIf="form2part.get('Address1Control').touched && form2part.get('Address1Control').invalid">Required</div>
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="區" name="Address2" [(ngModel)]="Address2">
+            <input formControlName="Address2Control" type="text" class="form-control" id="inputAddress2" placeholder="區" name="Address2" >
+            <div class="alert alert-danger" *ngIf="form2part.get('Address2Control').touched && form2part.get('Address2Control').invalid">Required</div>
           </div>
           <div class="form-group col-md-4">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" name="Address3" [(ngModel)]="Address3">
+            <input formControlName="Address3Control" type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" name="Address3">
+            <div class="alert alert-danger" *ngIf="form2part.get('Address3Control').touched && form2part.get('Address3Control').invalid">Required</div>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
-            <input type="text" class="form-control" id="inputCity" placeholder="地址" name="Address4" [(ngModel)]="Address4">
+            <input formControlName="Address4Control" type="text" class="form-control" id="inputCity" placeholder="地址" name="Address4" >
+            <div class="alert alert-danger" *ngIf="form2part.get('Address4Control').touched && form2part.get('Address4Control').invalid">Required</div>
           </div>
         </div>
       </form>

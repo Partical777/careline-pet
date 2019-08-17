@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'member',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 
 export class MemberComponent  {
+  form2part = new FormGroup({
+    phoneControl: new FormControl('', Validators.required),
+    Address1Control: new FormControl('', Validators.required),
+    Address2Control: new FormControl('', Validators.required),
+    Address3Control: new FormControl('', Validators.required),
+    Address4Control: new FormControl('', Validators.required),
+  });
+
   categoryChooseForm = localStorage.getItem("categoryChooseForm");
   nicknameForm = localStorage.getItem("nicknameForm");
   genderChooseForm = localStorage.getItem("genderChooseForm");
@@ -29,11 +38,6 @@ export class MemberComponent  {
   BirthMonth = "";//Added
   BirthDay = "";//Added
   Email = "examle@example.com";//Added
-  Phone = "";//Added
-  Address1 = "";//Added
-  Address2 = "";//Added
-  Address3 = "";//Added
-  Address4 = "";//Added
 
   getYear(event){
     this.BirthYear = event.target.value;
@@ -79,8 +83,8 @@ export class MemberComponent  {
     localStorage.setItem("TaiwanID", this.TaiwanID);
     localStorage.setItem("Birth", this.BirthYear + "/" + this.BirthMonth + "/" + this.BirthDay);
     localStorage.setItem("Email", this.Email);
-    localStorage.setItem("Phone", this.Phone);
-    localStorage.setItem("Address", this.Address1 + ", " + this.Address2 + ", " + this.Address3 + ", " + this.Address4);
+    localStorage.setItem("Phone", this.form2part.get('phoneControl').value);
+    localStorage.setItem("Address", this.form2part.get('Address1Control').value + ", " + this.form2part.get('Address2Control').value + ", " + this.form2part.get('Address3Control').value + ", " + this.form2part.get('Address4Control').value);
 
     localStorage.setItem("PetBirth", this.PetBirthYear + "/" + this.PetBirthMonth + "/" + this.PetBirthDay);
     localStorage.setItem("PetWeight", this.PetWeight);
