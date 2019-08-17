@@ -117,7 +117,7 @@
       請詳細填寫，以保障您的權益
     </div>
     <div class="col-sm-12 col-md-6">
-      <form>
+      <form [formGroup]="form3part">
         <div class="form-row">
           <div class="form-group col-md-2">暱稱</div>
           <div class="form-group col-md-4">
@@ -165,7 +165,8 @@
         <div class="form-row">
           <div class="form-group col-md-2">體重</div>
           <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="請輸入體重" name="PetWeight" [(ngModel)]="PetWeight">
+            <input formControlName="petWeightControl" [class.alertRequired]="form3part.get('petWeightControl').touched && form3part.get('petWeightControl').invalid" type="email" class="form-control" id="inputEmail4" placeholder="請輸入體重" name="PetWeight">
+            <div class="alertRequiredText" *ngIf="form3part.get('petWeightControl').touched && form3part.get('petWeightControl').invalid">請填入寵物體重，限制100公斤以下</div>
           </div>
           <div class="form-group col-md-4">公斤</div>
         </div>
@@ -180,15 +181,24 @@
         <div class="form-row">
           <div class="form-group col-md-3">證明文件</div>
           <div class="form-group col-md-9">
-            <select id="inputState" class="form-control">
+            <select (change)="getProve($event)" id="inputState" class="form-control">
               <option selected>請選取證明文件</option>
-              <option>晶片序號</option>
-              <option>血統證明</option>
-              <option>體檢證明(需兩年內)</option>
-              <option>注射疫苗證明(需兩年內)</option>
+              <option [value]="1">晶片序號</option>
+              <option [value]="2">血統證明</option>
+              <option [value]="3">體檢證明(需兩年內)</option>
+              <option [value]="4">注射疫苗證明(需兩年內)</option>
             </select>
           </div>
         </div>
+
+        <div *ngIf="Prove == 1" class="form-row">
+          <div class="form-group col-md-3">晶片序號</div>
+          <div class="form-group col-md-9">
+            <input formControlName="proveSeriesControl" [class.alertRequired]="form3part.get('proveSeriesControl').touched && form3part.get('proveSeriesControl').invalid" type="email" class="form-control" id="inputEmail4" placeholder="請輸入寵物晶片序號(限數字/英文)">
+            <div class="alertRequiredText" *ngIf="form3part.get('proveSeriesControl').touched && form3part.get('proveSeriesControl').invalid">請輸入10或15碼晶片序號（限數字/英文）</div>
+          </div>
+        </div>
+
         <div class="form-row">
           <div class="form-group col-md-3">
           寵物保險起保日

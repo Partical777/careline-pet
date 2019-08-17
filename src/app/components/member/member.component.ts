@@ -16,6 +16,11 @@ export class MemberComponent  {
     Address4Control: new FormControl('', Validators.required),
   });
 
+  form3part = new FormGroup({
+    petWeightControl: new FormControl('', Validators.required),
+    proveSeriesControl: new FormControl('', Validators.required),
+  });
+
   PetYear = [];
   PetMonth = [];
   PetDay = [];
@@ -44,7 +49,7 @@ export class MemberComponent  {
   PetBirthYear = "";//Added
   PetBirthMonth = "";//Added
   PetBirthDay = "";//Added
-  PetWeight = "";   //Added
+  Prove = "" ;//Added
   StartYear = "";//Added
   StartMonth = "";//Added
   StartDay = "";//Added
@@ -84,6 +89,10 @@ export class MemberComponent  {
     this.PetBirthDay = event.target.value;
   }
 
+  getProve(event){
+    this.Prove = event.target.value;
+  }
+
   getStartYear(event){
     this.StartYear = event.target.value;
   }
@@ -108,7 +117,9 @@ export class MemberComponent  {
     localStorage.setItem("Address", this.form2part.get('Address1Control').value + ", " + this.form2part.get('Address2Control').value + ", " + this.form2part.get('Address3Control').value + ", " + this.form2part.get('Address4Control').value);
 
     localStorage.setItem("PetBirth", this.PetBirthYear + "/" + this.PetBirthMonth + "/" + this.PetBirthDay);
-    localStorage.setItem("PetWeight", this.PetWeight);
+    localStorage.setItem("PetWeight", this.form2part.get('petWeightControl').value);
+    localStorage.setItem("Prove", this.Prove);
+    localStorage.setItem("ProveSeries", this.form2part.get('proveSeriesControl').value);
     localStorage.setItem("StartYear", this.StartYear);
     localStorage.setItem("StartMonth", this.StartMonth);
     localStorage.setItem("StartDay", this.StartDay);
