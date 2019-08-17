@@ -88,16 +88,19 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-4">
-            <input formControlName="Address1Control" [class.alertRequired]="form2part.get('Address1Control').touched && form2part.get('Address1Control').invalid" type="text" class="form-control" id="inputAddress" placeholder="縣市" name="Address1" >
-            <div class="alertRequiredText" *ngIf="form2part.get('Address1Control').touched && form2part.get('Address1Control').invalid">此欄位為必填</div>
+            <select (change)="getCapital($event)" id="inputState" class="form-control">
+              <option selected>縣市</option>
+              <option *ngFor="let capital of CapitalArray" [value]="capital">{{capital}}</option>
+            </select>
           </div>
           <div class="form-group col-md-4">
-            <input formControlName="Address2Control" [class.alertRequired]="form2part.get('Address2Control').touched && form2part.get('Address2Control').invalid" type="text" class="form-control" id="inputAddress2" placeholder="區" name="Address2" >
-            <div class="alertRequiredText" *ngIf="form2part.get('Address2Control').touched && form2part.get('Address2Control').invalid">此欄位為必填</div>
+            <select (change)="getRegion($event)" id="inputState" class="form-control">
+              <option selected>區</option>
+              <option *ngFor="let region of AddressArray[capitalIndex]" [value]="region">{{region.slice(3)}}</option>
+            </select>
           </div>
           <div class="form-group col-md-4">
-            <input formControlName="Address3Control" [class.alertRequired]="form2part.get('Address3Control').touched && form2part.get('Address3Control').invalid" type="text" class="form-control" id="inputAddress2" placeholder="郵遞區號" name="Address3">
-            <div class="alertRequiredText" *ngIf="form2part.get('Address3Control').touched && form2part.get('Address3Control').invalid">此欄位為必填</div>
+            <input disabled type="text" class="form-control" id="inputAddress2" [value]="Address3" name="Address3">
           </div>
         </div>
         <div class="form-row">
@@ -230,7 +233,7 @@
           </div>
           <div class="form-group">
             <div class="custom-control custom-checkbox form-check">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <input checked type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">同意自動續保(若未勾選視為不同意)</label>
             </div>
           </div>
@@ -266,7 +269,7 @@
       <div class="text-left form-group col-md-8">
         <form>
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <input checked type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline1">否</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
@@ -284,7 +287,7 @@
       <div class="text-left form-group col-md-8">
         <form>
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
+            <input checked type="radio" id="customRadioInline21" name="customRadioInline21" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline21">否</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
@@ -301,7 +304,7 @@
       <div class="text-left form-group col-md-8">
         <form>
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline31" name="customRadioInline31" class="custom-control-input">
+            <input checked type="radio" id="customRadioInline31" name="customRadioInline31" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline31">否</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
@@ -318,7 +321,7 @@
       <div class="text-left form-group col-md-8">
         <form>
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline41" name="customRadioInline41" class="custom-control-input">
+            <input checked type="radio" id="customRadioInline41" name="customRadioInline41" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline41">否</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
@@ -335,7 +338,7 @@
       <div class="text-left form-group col-md-8">
         <form>
           <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline51" name="customRadioInline51" class="custom-control-input">
+            <input checked type="radio" id="customRadioInline51" name="customRadioInline51" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline51">否</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
