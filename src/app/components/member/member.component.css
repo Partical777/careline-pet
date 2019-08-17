@@ -77,6 +77,11 @@ hr{
 
 
 /* form required */
-.alert-danger{
-  border-radius: 25px;
+.alertRequired{
+  border: 3px solid red;
+}
+
+.alertRequiredText{
+  color: red;
+  margin-top: 10px;
 }
