@@ -117,9 +117,9 @@ export class MemberComponent  {
     localStorage.setItem("Address", this.form2part.get('Address1Control').value + ", " + this.form2part.get('Address2Control').value + ", " + this.form2part.get('Address3Control').value + ", " + this.form2part.get('Address4Control').value);
 
     localStorage.setItem("PetBirth", this.PetBirthYear + "/" + this.PetBirthMonth + "/" + this.PetBirthDay);
-    localStorage.setItem("PetWeight", this.form2part.get('petWeightControl').value);
+    localStorage.setItem("PetWeight", this.form3part.get('petWeightControl').value);
     localStorage.setItem("Prove", this.Prove);
-    localStorage.setItem("ProveSeries", this.form2part.get('proveSeriesControl').value);
+    localStorage.setItem("ProveSeries", this.form3part.get('proveSeriesControl').value);
     localStorage.setItem("StartYear", this.StartYear);
     localStorage.setItem("StartMonth", this.StartMonth);
     localStorage.setItem("StartDay", this.StartDay);

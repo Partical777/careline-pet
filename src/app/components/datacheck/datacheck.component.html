@@ -55,7 +55,8 @@
               <li>性別 : {{genderChooseForm}}</li>
               <li>生日 : {{PetBirth}}</li>
               <li>體重 : {{PetWeight}} kg</li>
-              <li>晶片序號</li>
+              <li>證明文件 : {{ProveText}}</li>
+              <li *ngIf="Prove == 1">晶片序號 : {{ProveSeries}}</li>
             </ul>
           </div>
         </div>
