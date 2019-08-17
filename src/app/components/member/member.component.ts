@@ -31,12 +31,12 @@ export class MemberComponent  {
   StartDay = "";//Added
 
 
-  LastName = "";//Added
-  FirstName = "";//Added
-  TaiwanID = "";//Added
-  BirthYear = "";//Added
-  BirthMonth = "";//Added
-  BirthDay = "";//Added
+  LastName = "Partical";//Added
+  FirstName = "Weng";//Added
+  TaiwanID = "A123456789";//Added
+  BirthYear = "1990";//Added
+  BirthMonth = "1";//Added
+  BirthDay = "1";//Added
   Email = "examle@example.com";//Added
 
   getYear(event){
