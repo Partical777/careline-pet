@@ -352,7 +352,7 @@
     </div>
     
     <div id="tableColumn" class="col-3" [ngClass]="{'tableColumnSelected' : !programChoose}" style="flex-direction:column;" (click)="changeProgram(0)">
-      <div id="tableItemTop">安心方案</div>
+      <div id="tableItemTop" [ngClass]="{'tableItemTopSelected' : !programChoose}">安心方案</div>
       <div id="tableItem">
         每次最高1,500元
         <br>
@@ -387,7 +387,7 @@
     </div>
 
     <div id="tableColumn" class="col-3" [ngClass]="{'tableColumnSelected' : programChoose}" style="flex-direction:column;" (click)="changeProgram(1)">
-      <div id="tableItemTop">全方位方案</div>
+      <div id="tableItemTop" [ngClass]="{'tableItemTopSelected' : programChoose}">全方位方案</div>
       <div id="tableItem">
         每次最高1,500元
         <br>

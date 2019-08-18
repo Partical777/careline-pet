@@ -51,7 +51,13 @@ button > a{
   border: 5px solid #e84466;
 }
 
+.tableItemTopSelected{
+  background-color: #e84466;
+  margin: -2.5px;
+}
+
 #tableItemTop{
+  font-size: 1.5em;
   text-align: center;
   padding: 5px 0;
   height: 75px;
@@ -59,7 +65,7 @@ button > a{
 
 #tableItem{
   text-align: center;
-  margin: 5px 0;
+  margin: 0 0 5px 0;
   background: white;
 }
 
@@ -70,7 +76,7 @@ button > a{
 }
 
 #tableColumn > #tableItem:nth-child(2){
-  height: 300px;
+  height: 350px;
 }
 
 #tableColumn > #tableItem:nth-child(3){
