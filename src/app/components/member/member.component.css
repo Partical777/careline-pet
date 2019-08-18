@@ -20,24 +20,32 @@ hr{
 }
 
 #stage1{
+  min-height: 75px;
+  min-width: 75px;
   background-color: rgb(232, 69, 102);
   -webkit-mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/貓的資料.svg#貓的資料") no-repeat center;
   mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/貓的資料.svg#貓的資料") no-repeat center;
 }
 
 #stage2{
+  min-height: 75px;
+  min-width: 75px;
   background-color: rgb(232, 69, 102);
   -webkit-mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/主人資料.svg#主人資料") no-repeat center;
   mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/主人資料.svg#主人資料") no-repeat center;
 }
 
 #stage3{
+  min-height: 75px;
+  min-width: 75px;
   background-color: grey;
   -webkit-mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/%E8%A8%82%E8%B3%BC%E5%AE%8C%E6%88%90.svg#%E8%A8%82%E8%B3%BC%E5%AE%8C%E6%88%90") no-repeat center;
   mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/%E8%A8%82%E8%B3%BC%E5%AE%8C%E6%88%90.svg#%E8%A8%82%E8%B3%BC%E5%AE%8C%E6%88%90") no-repeat center;
 }
 
 #stage4{
+  min-height: 75px;
+  min-width: 75px;
   background-color: grey;
   -webkit-mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/%E8%B3%87%E6%96%99%E7%A2%BA%E8%AA%8D%E5%8F%8A%E7%B9%B3%E8%B2%BB.svg#%E8%B3%87%E6%96%99%E7%A2%BA%E8%AA%8D%E5%8F%8A%E7%B9%B3%E8%B2%BB") no-repeat center;
   mask: url("https://www.careline.com.tw/CareLinePet/Pet/assets/progressBar/%E8%B3%87%E6%96%99%E7%A2%BA%E8%AA%8D%E5%8F%8A%E7%B9%B3%E8%B2%BB.svg#%E8%B3%87%E6%96%99%E7%A2%BA%E8%AA%8D%E5%8F%8A%E7%B9%B3%E8%B2%BB") no-repeat center;
