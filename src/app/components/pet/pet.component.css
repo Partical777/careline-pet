@@ -13,6 +13,7 @@
   border-radius: 25px;
   background-color: rgb(245, 249, 250);
   box-shadow: 0.4375rem 0.4375rem 0 0 #83d6de;
+  margin-bottom: 15px;
 }
 
 button > a{
@@ -110,6 +111,7 @@ button > a{
 
 #categoryChooseLink{
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 #categoryDivText{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'pet',
@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: [ 'pet.component.css' ]
 })
 export class PetComponent  {
+  widthIf;
+
+  resizeWindow(){
+    this.widthIf = document.body.offsetWidth >= 752;
+  }
+
+  ngOnInit(){
+    this.resizeWindow();
+  }
+
+  @HostListener("window:resize", ["$event"])
+  onResize(event) {      
+    this.resizeWindow();
+  }
+
+
+
   localjson = {
     "Dog" : {
       "categoryChoose" : "Dog",
